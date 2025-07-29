@@ -1,0 +1,7 @@
+{
+    "customers": ["id", "name", "email", "signup_date"],
+    "orders": ["id", "customer_id", "order_date", "status", "total_amount"],
+    "order_items": ["id", "order_id", "product_id", "quantity", "price"],
+    "products": ["id", "name", "category", "price", "stock_quantity"],
+    "payments": ["id", "order_id", "payment_method", "payment_date", "amount", "status"]
+  }

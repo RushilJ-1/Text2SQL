@@ -1,0 +1,90 @@
+{
+  "credit_card_transactions": ["transaction_id", "credit_card_id", "transaction_reference", "amount","transaction_date", "post_date", "description", "merchant_name",
+    "merchant_category_code", "merchant_city", "merchant_country",
+    "is_international", "currency_code", "original_amount", "conversion_rate",
+    "statement_id", "reward_points_earned", "transaction_type", "status", "created_at"] ,
+  "credit_card_statements": [
+    "statement_id", "credit_card_id", "statement_date", "due_date",
+    "opening_balance", "closing_balance", "minimum_payment", "interest_charged",
+    "late_payment_fee", "taxes", "payment_status", "statement_pdf_url",
+    "generated_at", "updated_at" ],
+  "credit_card_accounts": [
+    "credit_card_id", "card_id", "credit_limit", "available_credit",
+    "statement_date", "due_date", "interest_rate", "min_payment_percentage",
+    "annual_fee", "joining_fee", "reward_points_earned", "reward_points_redeemed",
+    "created_at", "updated_at" ],
+  "cards": [
+    "card_id", "card_number", "customer_id", "account_id", "card_type_id",
+    "expiry_date", "name_on_card", "cvv", "pin", "card_status", "activation_date",
+    "is_contactless", "daily_limit", "international_usage", "online_usage",
+    "atm_usage", "pos_usage", "created_at", "updated_at" ],
+  "card_types": [
+    "card_type_id", "type_code", "description", "is_credit",
+    "network", "annual_fee", "is_active" ],
+  "insurance_products": [
+    "insurance_product_id", "product_code", "product_name", "description",
+    "insurance_type", "provider_name", "min_sum_assured", "max_sum_assured",
+    "min_term_months", "max_term_months", "min_age", "max_age",
+    "premium_payment_frequency", "is_active", "created_at", "updated_at" ],
+  "insurance_premium_payments": [
+    "payment_id", "policy_id", "transaction_id", "payment_date", "amount",
+    "payment_period_start", "payment_period_end", "payment_status",
+    "payment_method", "receipt_number", "created_at" ],
+  "insurance_policies": [
+    "policy_id", "customer_id", "insurance_product_id", "policy_number",
+    "sum_assured", "premium_amount", "premium_payment_frequency", "start_date",
+    "end_date", "next_premium_date", "policy_status", "nominee_name",
+    "nominee_relationship", "account_id", "created_at", "updated_at" ],
+  "investment_products": [
+    "investment_product_id", "product_code", "product_name", "description",
+    "investment_type", "min_investment_amount", "max_investment_amount",
+    "min_term_days", "max_term_days", "interest_rate", "fund_house",
+    "risk_level", "is_active", "created_at", "updated_at" ],
+  "investment_transactions": [
+    "transaction_id", "investment_id", "account_transaction_id", "transaction_type",
+    "transaction_date", "amount", "units", "nav_per_unit", "description", "created_at" ],
+     "investments": [
+    "investment_id", "customer_id", "investment_product_id", "account_id", "investment_reference",
+    "investment_amount", "current_value", "start_date", "maturity_date", "term_days",
+    "interest_rate", "monthly_investment", "units", "nav_per_unit", "investment_status", "auto_renewal",
+    "nominee_name", "nominee_relationship", "created_at", "updated_at" ],
+  "accounts": [
+    "account_id", "account_number", "customer_id", "account_type_id", "currency", "current_balance",
+    "available_balance", "opened_date", "last_transaction_date", "account_status", "branch_code",
+    "overdraft_limit", "created_at", "updated_at"  ],
+  "loan_products": [
+    "loan_product_id", "product_code", "product_name", "description", "loan_type", "min_amount",
+    "max_amount", "min_tenure_months", "max_tenure_months", "base_interest_rate", "processing_fee_perc",
+    "foreclosure_fee_perc", "late_payment_fee", "is_active", "created_at", "updated_at"  ],
+  "loan_applications": [
+    "loan_application_id", "customer_id", "loan_product_id", "application_reference", "loan_amount",
+    "tenure_months", "interest_rate", "processing_fee", "purpose", "monthly_income", "employment_type",
+    "employer_name", "application_status", "approval_date", "rejection_reason", "credit_score", "created_at",
+    "updated_at" ],
+  "transactions": [
+    "transaction_id", "transaction_reference", "account_id", "transaction_type_id", "amount",
+    "running_balance", "transaction_date", "description", "status", "channel", "merchant_details",
+    "reference_id", "metadata", "created_at" ],
+  "loan_repayments": [
+    "repayment_id", "loan_id", "transaction_id", "repayment_date", "amount_paid", "principal_component",
+    "interest_component", "penalties", "emi_number", "is_advance_payment", "is_foreclosure",
+    "repayment_status", "created_at" ],
+  "transfers": [
+    "transfer_id", "transaction_id", "transfer_type_id", "source_account_id", "destination_account_number",
+    "destination_account_holder_name", "destination_bank_code", "destination_bank_name",
+    "destination_ifsc_code", "reference_number", "purpose", "scheduled_date", "is_recurring",
+    "recurrence_pattern", "recurrence_end_date", "status", "created_at", "updated_at" ],
+  "transfer_types": [
+        "transfer_type_id", "type_code", "description", "max_limit_per_transaction", "daily_limit",
+        "processing_fee", "is_active" ],
+  "loans": [
+    "loan_id", "loan_application_id", "loan_account_number", "disbursement_account_id", "disbursement_date",
+    "disbursement_amount", "principal_outstanding", "interest_outstanding", "tenure_months",
+    "interest_rate", "emi_amount", "next_emi_date", "total_emis", "emis_paid", "loan_end_date",
+    "loan_status", "created_at", "updated_at" ],
+  "customers": [
+    "customer_id", "customer_uuid", "first_name", "middle_name", "last_name", "date_of_birth",
+    "email", "phone_number", "pan_number", "aadhaar_number", "address_line1", "address_line2",
+    "city", "state", "postal_code", "country", "customer_status", "customer_type", "kyc_status",
+    "created_at", "updated_at", "last_login_at" ]
+}
